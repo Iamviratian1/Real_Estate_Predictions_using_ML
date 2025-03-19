@@ -1,12 +1,12 @@
 # Real_Estate_Predictions_using_ML
 Estate Estimator: Machine Learning for Competitive Property Pricing
 
-Project Overview
+# Project Overview
 
 This project applies machine learning techniques to predict house prices using a dataset from King County, Washington. We explored multiple regression and classification models, conducted extensive feature engineering, and optimized model performance using dimensionality reduction techniques like PCA and backward elimination.
 
 
-Objectives
+# Objectives
 
 Build a predictive model for house prices based on property attributes.
 
@@ -16,7 +16,7 @@ Compare the performance of different machine learning models.
 
 Provide insights into the key factors influencing house prices.
 
-Dataset
+# Dataset
 
 Source: King County, Washington housing dataset.
 
@@ -26,7 +26,7 @@ Key Features: Bedrooms, bathrooms, square footage, location, grade, year built, 
 
 Target Variable: Sale price of the property.
 
-Data Preprocessing
+# Data Preprocessing
 
 Converted date format and standardized numeric fields.
 
@@ -36,7 +36,7 @@ Removed outliers (houses priced above $2.5M).
 
 Dropped unnecessary columns ('id', 'date', 'zipcode').
 
-Exploratory Data Analysis (EDA)
+# Exploratory Data Analysis (EDA)
 
 Analyzed price distribution and feature relationships.
 
@@ -44,47 +44,14 @@ Identified strong correlations with price: sqft_living, grade, sqft_above, sqft_
 
 Visualized data trends using histograms, boxplots, and heatmaps.
 
-Feature Engineering
+# Feature Engineering
 
 Principal Component Analysis (PCA): Reduced dimensionality while retaining 72% variance.
 
 Backward Elimination: Identified top 6 significant features for model training.
 
-Machine Learning Models
 
-Regression Models
-
-Linear Regression
-
-With PCA: RMSE = $188,981.20
-
-With Top Features: RMSE = $193,070.49
-
-K-Nearest Neighbors (KNN) Regression
-
-KNN-5 with PCA: RMSE = $153,027.17
-
-KNN-10 with PCA: RMSE = $155,071.66
-
-Random Forest Regression
-
-All Features: RMSE = $117,528.94 (Best Model)
-
-Top Features: RMSE = $153,280.21
-
-PCA: RMSE = $150,520.18
-
-Classification Model
-
-Converted house prices into three price categories.
-
-KNN Classification
-
-KNN-5 Accuracy: 76.44%
-
-KNN-10 Accuracy: 78.74%
-
-Key Findings
+# Key Findings
 
 Best Model: Random Forest with all features performed the best.
 
@@ -94,7 +61,7 @@ Impact of Feature Selection: While PCA and backward elimination reduced dimensio
 
 Classification Accuracy: KNN performed well in categorizing houses into price ranges.
 
-Limitations & Future Work
+# Limitations & Future Work
 
 The dataset is limited to King County, Washington; generalization to other regions requires additional data.
 
